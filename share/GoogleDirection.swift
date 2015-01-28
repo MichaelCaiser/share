@@ -80,8 +80,6 @@ class GoogleDirection: NSObject, NSURLConnectionDataDelegate {
                 println("there is error")
             }
             
-            
-
             if (response["status"] as String == "OK") {
                 let routes = response["routes"] as NSArray
                 let route = routes[0] as NSDictionary

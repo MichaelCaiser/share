@@ -80,24 +80,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             }
         )
         
-//        UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-//        [button setTitle:@"X" forState:UIControlStateNormal];
-//        
-//        [button addTarget:self action:@selector(wasDragged:withEvent:)
-//        forControlEvents:UIControlEventTouchDragInside];
-//
-//        button.frame = CGRectMake(135.0, 180.0, 40.0, 40.0);//width and height should be same value
-//        
-//        button.clipsToBounds = YES;
-//        
-//        button.layer.cornerRadius = 20;//half of the width
-//        
-//        button.layer.borderWidth=2.0f;
-//        
-//        [self.view addSubview:button];
-//
-//        [self.view addSubview:button];
-        
         var button: UIButton = UIButton.buttonWithType(UIButtonType.System) as UIButton
         
         button.setTitle("X", forState: UIControlState.Normal)
@@ -180,8 +162,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         var marker:GMSMarker = GMSMarker(position: position)
         
-        marker.title = "HELLO WORLD~~~"
-        
+        marker.title = "WORLD!"
         
         println("latitude: \(self.mapView?.myLocation.coordinate.latitude), longtitude: \(self.mapView?.myLocation.coordinate.longitude)")
         
